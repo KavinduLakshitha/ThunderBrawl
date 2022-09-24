@@ -1,0 +1,22 @@
+@font-face {
+  font-family: "LarabiefontW00-Regular";
+  src: url("//db.onlinewebfonts.com/t/129046608676a943fa508835737af43f.eot");
+  src: url("//db.onlinewebfonts.com/t/129046608676a943fa508835737af43f.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/129046608676a943fa508835737af43f.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/129046608676a943fa508835737af43f.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/129046608676a943fa508835737af43f.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/129046608676a943fa508835737af43f.svg#LarabiefontW00-Regular")
+      format("svg");
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}

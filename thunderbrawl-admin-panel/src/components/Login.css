@@ -1,0 +1,36 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.admin__button {
+  background: linear-gradient(180deg, #ffffff 16.07%, #e69008 91.74%);
+  border-radius: 12px;
+  width: 235px;
+  height: 56px;
+  color: #2f0944;
+  font-family: "Chava-Regular", cursive;
+  font-weight: 400;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.modal-content {
+  background: linear-gradient(
+    180deg,
+    #5c12aa 0%,
+    rgba(207, 18, 158, 0.4) 87.07%
+  );
+  width: 643px;
+  height: 287px;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal.fade.show {
+  backdrop-filter: blur(5px);
+}

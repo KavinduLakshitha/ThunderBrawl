@@ -1,0 +1,299 @@
+.admin__panel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    #5c12aa 0%,
+    rgba(207, 18, 158, 0.4) 87.07%
+  );
+  border-radius: 12px;
+  width: 50%;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: "Chava-Regular", cursive;
+}
+
+.admin__panel > h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 34px;
+  margin-top: 25px;
+  letter-spacing: 3px;
+}
+
+.gamemode__toggle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.gamemode__toggle > h3 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+}
+
+/* On off button */
+
+.toggleWrapper {
+  margin-top: 20px;
+}
+
+.toggleWrapper input {
+  position: absolute;
+  left: -99em;
+}
+
+.toggle {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  width: 90px;
+  height: 50px;
+  background-color: rgba(64, 12, 92, 1);
+  border-radius: 12px;
+  transition: background-color 200ms rgba(255, 255, 255, 1);
+}
+
+.toggle::before {
+  font-weight: 700;
+  content: "OFF";
+  position: absolute;
+  left: -50px;
+  top: 15px;
+  font-size: 20px;
+  color: #000;
+}
+
+.toggle::after {
+  font-weight: 700;
+  content: "ON";
+  position: absolute;
+  right: -48px;
+  top: 15px;
+  font-size: 20px;
+  color: #749ed7;
+}
+
+.toggle__handler {
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+  top: 3px;
+  left: 3px;
+  width: 44px;
+  height: 44px;
+  background: #555;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: all 400ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+input:checked + .toggle {
+  background: rgba(64, 12, 92, 1);
+}
+
+input:checked + .toggle:before {
+  color: #749ed7;
+}
+
+input:checked + .toggle:after {
+  color: #e69008;
+}
+
+input:checked + .toggle .toggle__handler {
+  background: linear-gradient(180deg, #ffffff 16.07%, #e69008 91.74%);
+  transform: translate3d(40px, 0, 0) rotate(0);
+}
+
+.win__percentage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.win__percentage > label {
+  color: #fff;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.input-group > input {
+  background: rgba(255, 255, 255, 0.8);
+  outline: none;
+  width: 100px;
+  height: 50px;
+  font-size: 18px;
+  border: 1.5px solid #45165e;
+  font-family: "Chava-Regular", cursive;
+  padding: 10px 10px;
+  box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.input-group > input::-webkit-outer-spin-button,
+.input-group > input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.input-group > button {
+  height: 50px;
+  width: 100px;
+  background: linear-gradient(180deg, #ffffff 16.07%, #e69008 91.74%);
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
+  border: none;
+  font-family: "Chava-Regular", cursive;
+  font-size: 20px;
+  letter-spacing: 8px;
+  color: #2f0944;
+  cursor: pointer;
+}
+
+.win__rate {
+  background-color: rgba(255, 255, 255, 0.5);
+  object-fit: contain;
+  aspect-ratio: 1;
+  width: 200px;
+  padding: 25px;
+  border-radius: 50%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 50px;
+  border: 15px solid rgba(97, 32, 133, 1);
+  line-height: 40px;
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.win__rate > h4 {
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.win__rate > h2 {
+  font-size: 34px;
+}
+
+.win__rate > h3 {
+  font-size: 24px;
+}
+
+.text__area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.text__area > button {
+  height: 45px;
+  width: 120px;
+  background: linear-gradient(180deg, #ffffff 16.07%, #e69008 91.74%);
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
+  border: none;
+  font-family: "Chava-Regular", cursive;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #2f0944;
+  margin-inline: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.text__area > textarea {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  outline: none;
+  border-radius: 8px;
+  font-size: 18px;
+  border: 1.5px solid #45165e;
+  font-family: "Chava-Regular", cursive;
+  padding: 10px 10px;
+  box-shadow: inset 2px 4px 4px rgba(0, 0, 0, 0.5);
+  filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.5));
+}
+
+.admin__submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-self: flex-end;
+  margin-right: 50px;
+  background: linear-gradient(
+    180deg,
+    #3e0a75 0%,
+    rgba(155, 10, 117, 0.4) 87.07%
+  );
+  height: 55px;
+  width: 150px;
+  color: #fff;
+  font-family: "Chava-Regular", cursive;
+  font-size: 18px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.8));
+  border-radius: 8px;
+  border: none;
+  letter-spacing: 1px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .admin__panel {
+    width: 95%;
+  }
+
+  .admin__panel > h1 {
+    font-size: 30px;
+  }
+
+  .gamemode__toggle > h3 {
+    font-size: 18px;
+  }
+
+  .toggle::before {
+    font-size: 18px;
+  }
+
+  .toggle::after {
+    font-size: 18px;
+  }
+
+  .input-group > input {
+    font-size: 16px;
+  }
+
+  .input-group > button {
+    font-size: 18px;
+  }
+
+  .win__rate > h4 {
+    font-size: 20px;
+    font-weight: 900;
+  }
+
+  .win__rate > h2 {
+    font-size: 30px;
+  }
+
+  .win__rate > h3 {
+    font-size: 22px;
+  }
+
+  .admin__submit {
+    font-size: 16px;
+  }
+}
